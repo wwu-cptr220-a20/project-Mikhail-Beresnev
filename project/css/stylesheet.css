@@ -1,0 +1,133 @@
+/* * {
+    border-style: solid;
+    border-color: red;
+} */
+
+body {
+    background-image: url("../images/background.jpg");
+}
+
+* {
+    color: white;
+}
+
+/* Navigation Bar */
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    border-style: solid;
+    border-color: royalblue;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline-start: 0px;
+}
+
+#chatrooms {
+    margin-right: 10em;
+}
+
+nav ul li {
+    display: inline;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 2em;
+
+}
+
+#logo {
+    padding: 1em 1.3em 1em 1.3em; /* Top, Right, Bottom, Left */
+    border-radius: .1em;
+    background-color: white;
+    background-image: url("../images/logo2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 1em;
+}
+
+/* Main Page */
+
+#name {
+    width: 100%;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 10em;
+}
+
+#code {
+    display: flex;
+    justify-content: space-between;
+}
+
+#issue-code {
+    text-align: center;
+    width: 50%;
+    word-wrap: break-word;
+}
+
+#enter-code {
+    text-align: center;
+    width: 50%;
+}
+
+/* Footer */
+
+footer {
+    color: gray;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Chatroom */
+
+#message-history {
+    width: 50%;
+    height: 35em;
+    margin: auto;
+    margin-top: 5%;
+    background-color: lightgrey;
+}
+
+#message-input {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#message-input textarea {
+    width: 47.3%;
+    resize: none;
+}
+
+button {
+    color: black;
+}
+
+li img {
+    height: 5em;
+    width: 10em;
+}
+
+@media (max-width: 992px) {
+    #code {
+        display: block;
+    }
+
+    #issue-code {
+        margin: auto;
+    }
+
+    #enter-code {
+        margin: auto;
+    }
+
+ }

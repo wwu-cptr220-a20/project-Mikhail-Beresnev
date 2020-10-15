@@ -6,30 +6,29 @@
     <meta name="Mikhail Beresnev" content="Name">
     <meta name="Anonymous Chatroom" content="Description of the page"> <!-- Incomplete -->
     <title>Stage 1</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <!-- Navigation Bar-->
-            <!-- Make this bar horizontal-->
-            <ul>
-                <!-- For css, make the icon into a css component-->
-                <!-- Make the ul not have the dots, make -->
-                <li>
-                    <a href="./index.html"> <img src="./images/icon.png" alt="Icon"> Anonymous Website</a>
-                </li>
-                <li>
-                    <a href="./info.html">Info</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <!-- Navigation Bar-->
+        <a id="logo" href="./index.html"></a>
+        <ul>
+            <li>
+                <a id="main-page" href="./index.html">Anonymous Chatroom</a>
+            </li>
+            <li>
+                <a id="chatrooms" href="./exampleChatRoom.html">Open Chatrooms</a>
+            </li>
+            <li>
+                <a id="info" href="./info.html">Info</a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- These should be expandable boxes -->
     <main>
         <h3>Content</h3>
-        <p>Clicking on point will jump to the section and open up the expandable box (to be implemented)</p>
         <ul>
             <li><a href="#basic-concept">Basic Concept</a></li>
             <li><a href="#usage-data">Usage Data</a></li>

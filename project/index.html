@@ -6,61 +6,71 @@
     <meta name="author" content="Mikhail Beresnev">
     <meta name="description" content="Anonymous Chatroom Home Page">
     <meta name="keywords" content="Anonymous, Chatroom">
-    <title>Stage 1</title>
+    <title>Stage 2</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <!-- Navigation Bar-->
-            <!-- Make this bar horizontal-->
-            <ul>
-                <!-- For css, make the icon into a css component-->
-                <!-- Make the ul not have the dots, make -->
-                <li>
-                    <a href="./index.html"> <img src="./images/icon.png" alt="Icon"> Anonymous Chatroom</a>
-                </li>
-                <li>
-                    <a href="./info.html">Info</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <!-- Navigation Bar-->
+        <a id="logo" href="./index.html" alt="logo"></a>
+        <ul>
+            <li>
+                <a id="main-page" href="./index.html">Anonymous Chatroom</a>
+            </li>
+            <li>
+                <a id="chatrooms" href="./exampleChatRoom.html">Open Chatrooms</a>
+            </li>
+            <li>
+                <a id="info" href="./info.html">Info</a>
+            </li>
+        </ul>
+    </nav>
+
     <main>
-        <h1>(To be background image)</h1>
-        <img src="images/background.jpg"> <!-- Background Image-->
         <!-- Middle of the Page -->
         <div id="name">
             <h2>Username</h2>
             <input type="text">
             <p>
-                Enter a temporary username for this session. This is an option feature, and a random name will be given in the case of no input.
+                Enter a temporary username for this session. This is an option feature, and a random name will be given
+                in the case of no input.
             </p>
         </div>
         <!-- Horizontal layout -->
         <!-- After pressing either button, -->
-        <div id="issue-number">
-            <h2>Issue a Code</h2>
-            <input type="number" placeholder="Time in Hours">
-            <button>Issue</button>
-            <p>
-                Issue a new code for a completely new chat room. After recieving the code, send this code to the people you may wish to talk to.
-                Additionally, enter the expiration date and time for the code in the case when at least two people have not joined the chat room (the 
-                minimum of the issuer and a different person). The default time is set to 3 days. Finally, the chat room will be deleted after 1 week of no use.
-            </p>
-        </div>
+        <div id="code">
+            <div id="issue-code">
+                <h2>Issue a Code</h2>
+                <input type="number" placeholder="Time in Hours">
+                <button>Issue</button>
+                <p>
+                    Issue a new code for a completely new chat room. After recieving the code, send this code to the
+                    people
+                    you may wish to talk to.
+                    Additionally, enter the expiration date and time for the code in the case when at least two people
+                    have
+                    not joined the chat room (the
+                    minimum of the issuer and a different person). The default time is set to 3 days. Finally, the chat
+                    room
+                    will be deleted after 1 week of no use.
+                </p>
+            </div>
 
-        <div id="enter-code">
-            <h2>Enter a Code</h2>>
-            <input type="password" placeholder="10101010">
-            <p>
-                Enter an exsisting code above. Upon entering the code, you will be connected to an anonymous chat room. 
-            </p>
-            <button>Join</button>
+            <div id="enter-code">
+                <h2>Enter a Code</h2>>
+                <input type="password" placeholder="10101010">
+                <p>
+                    Enter an exsisting code above. Upon entering the code, you will be connected to an anonymous chat
+                    room.
+                </p>
+                <button>Join</button>
+            </div>
         </div>
     </main>
     <footer>
         <p>2020 Web Development Project by M. Beresnev</p>
     </footer>
 </body>
+
 </html>
