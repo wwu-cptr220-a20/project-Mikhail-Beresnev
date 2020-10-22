@@ -7,22 +7,23 @@
     <meta name="description" content="Anonymous Chatroom Home Page">
     <meta name="keywords" content="Anonymous, Chatroom">
     <title>Stage 2</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <nav>
         <!-- Navigation Bar-->
-        <a id="logo" href="./index.html" alt="logo"></a>
+        <a id="logo" href="../index/index.html" alt="logo"></a>
         <ul>
             <li>
-                <a id="main-page" href="./index.html">Anonymous Chatroom</a>
+                <a id="main-page" href="../index/index.html">Anonymous Chatroom</a>
             </li>
             <li>
-                <a id="chatrooms" href="./exampleChatRoom.html">Open Chatrooms</a>
+                <a id="chatrooms" href="../chatroom/chatroom.html">Open Chatrooms</a>
             </li>
             <li>
-                <a id="info" href="./info.html">Info</a>
+                <a id="info" href="../info/info.html">Info</a>
             </li>
         </ul>
     </nav>
@@ -31,7 +32,7 @@
         <!-- Middle of the Page -->
         <div id="name">
             <h2>Username</h2>
-            <input type="text">
+            <input id="username-input" type="text">
             <p>
                 Enter a temporary username for this session. This is an option feature, and a random name will be given
                 in the case of no input.
@@ -42,8 +43,8 @@
         <div id="code">
             <div id="issue-code">
                 <h2>Issue a Code</h2>
-                <input type="number" placeholder="Time in Hours">
-                <button>Issue</button>
+                <input id="issue-code-input" type="number" placeholder="Time in Hours">
+                <button id="issue-code-button">Issue</button>
                 <p>
                     Issue a new code for a completely new chat room. After recieving the code, send this code to the
                     people
@@ -59,18 +60,20 @@
 
             <div id="enter-code">
                 <h2>Enter a Code</h2>>
-                <input type="password" placeholder="10101010">
+                <input id="enter-code-input" type="text" placeholder="10101010">
+                <button id="enter-code-button">Join</button>
                 <p>
                     Enter an exsisting code above. Upon entering the code, you will be connected to an anonymous chat
                     room.
                 </p>
-                <button>Join</button>
             </div>
         </div>
     </main>
     <footer>
         <p>2020 Web Development Project by M. Beresnev</p>
     </footer>
+    <script src="../javascript/database.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

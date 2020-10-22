@@ -53,31 +53,6 @@ nav ul li {
     margin-right: 1em;
 }
 
-/* Main Page */
-
-#name {
-    width: 100%;
-    text-align: center;
-    margin-top: 5em;
-    margin-bottom: 10em;
-}
-
-#code {
-    display: flex;
-    justify-content: space-between;
-}
-
-#issue-code {
-    text-align: center;
-    width: 50%;
-    word-wrap: break-word;
-}
-
-#enter-code {
-    text-align: center;
-    width: 50%;
-}
-
 /* Footer */
 
 footer {
@@ -86,35 +61,8 @@ footer {
     bottom: 0;
 }
 
-/* Chatroom */
-
-#message-history {
-    width: 50%;
-    height: 35em;
-    margin: auto;
-    margin-top: 5%;
-    background-color: lightgrey;
-}
-
-#message-input {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-#message-input textarea {
-    width: 47.3%;
-    resize: none;
-}
-
 button {
     color: black;
-}
-
-li img {
-    height: 5em;
-    width: 10em;
 }
 
 @media (max-width: 992px) {
@@ -129,5 +77,4 @@ li img {
     #enter-code {
         margin: auto;
     }
-
  }

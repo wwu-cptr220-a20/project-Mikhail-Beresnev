@@ -1,0 +1,26 @@
+#name {
+    width: 100%;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 10em;
+}
+
+#code {
+    display: flex;
+    justify-content: space-between;
+}
+
+#issue-code {
+    text-align: center;
+    width: 50%;
+    word-wrap: break-word;
+}
+
+#enter-code {
+    text-align: center;
+    width: 50%;
+}
+
+input {
+    color: black;
+}

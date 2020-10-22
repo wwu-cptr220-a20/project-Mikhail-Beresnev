@@ -1,0 +1,17 @@
+.collapsible {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    width: 50%;
+    background-color: gray;
+}
+
+.security-image {
+    height: 5em;
+    width: 10em;
+}
