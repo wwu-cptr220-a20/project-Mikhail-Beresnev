@@ -17,3 +17,8 @@
     width: 47.3%;
     resize: none;
 }
+
+#map {
+    height: 480px;
+    width: 670px;
+}

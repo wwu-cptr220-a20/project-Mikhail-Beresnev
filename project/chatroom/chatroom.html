@@ -8,15 +8,18 @@
     <title>Stage 1</title>
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="stylesheet" href="chatroom.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
 </head>
 
 <body>
     <nav>
         <!-- Navigation Bar-->
-        <a id="logo" href="../index/index.html" alt="logo"></a>
+        <a id="logo" href="../index.html" alt="logo"></a>
         <ul>
             <li>
-                <a id="main-page" href="../index/index.html">Anonymous Chatroom</a>
+                <a id="main-page" href="../index.html">Anonymous Chatroom</a>
             </li>
             <li>
                 <a id="chatrooms" href="../chatroom/chatroom.html">Open Chatrooms</a>
@@ -27,17 +30,23 @@
         </ul>
     </nav>
 
-    <div id="message-history"></div>
+    <div id="message-history" style="color: black">Enter in the following format, 'xxxxx yyyyy' with x being the starting zip code and y being the ending zip code. Below is a map that is more geared towards the groups decided project rather than this project.
+        <div id="map" alt="map"></div>
+    </div>
 
     <div id="message-input">
-        <textarea></textarea>
+        <textarea style="color: black"></textarea>
         <button>Send</button>
     </div>
 
     <footer>
         <p>2020 Web Development Project by M. Beresnev</p>
     </footer>
-    <script src="database.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    <script src="../javascript/database.js"></script>
     <script src="chatroom.js"></script>
 </body>
 
