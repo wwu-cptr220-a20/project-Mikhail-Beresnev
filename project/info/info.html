@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Mikhail Beresnev" content="Name">
+    <meta name="Anonymous Chatroom" content="Description of the page"> <!-- Incomplete -->
+    <title>Stage 1</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="info.css">
+</head>
+
+<body>
+    <nav>
+        <!-- Navigation Bar-->
+        <a id="logo" href="../index.html" alt="logo"></a>
+        <ul>
+            <li>
+                <a id="main-page" href="../index.html">Anonymous Chatroom</a>
+            </li>
+            <li>
+                <a id="chatrooms" href="../chatroom/chatroom.html">Open Chatrooms</a>
+            </li>
+            <li>
+                <a id="info" href="../info/info.html">Info</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- These should be expandable boxes -->
+    <main>
+        <h3>Content</h3>
+        <ul>
+            <li><a href="#basic-concept">Basic Concept</a></li>
+            <li><a href="#usage-data">Usage Data</a></li>
+            <li><a href="#help">Help</a></li>
+            <li><a href="#future-content">Future Content</a></li>
+        </ul>
+
+
+        <ul>
+            <li id="basic-concept">
+                <button class="collapsible">Basic Concept</button>
+                <!-- <img class="content security-image" src="../images/security.jpg" alt="security"> -->
+                <p class="content">
+                    The concept of the website is to allow anonymous conversations to happen with no lasting documentation. Codes are assigned to a specific 
+                    chat room through the use of a dictionary (JavaScript). The system will track the conversations for the duration of it's exsistence, after which 
+                    it will be deleted. At no point will the system track the users, with the exception of the username used to make a message.
+                </p>
+            </li>
+
+            <li id="usage-data">
+                <button class="collapsible">Usage Data</button>
+                <table class="content">
+                    <thead>
+                        <tr>
+                            <th>Content</th>
+                            <th>Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Random Usernames Assigned</td>
+                            <td>1234</td>
+                        </tr>
+                        <tr>
+                            <td>Codes Issued</td>
+                            <td>1345</td>
+                        </tr>
+                        <tr>
+                            <td>Joined Rooms</td>
+                            <td>2564</td> <!-- How many people have joined a room, rephrase later -->
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+
+            <li id="help">
+                <button class="collapsible">Help</button>
+                <p class="content">Too early in development to need a help section, but will be needed in the forseeable future</p>
+            </li>
+
+            <li id="future-content">
+                <button class="collapsible">Future Content</button>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p>2020 Web Development Project by M. Beresnev</p>
+    </footer>
+    <script src="../javascript/database.js"></script>
+    <script src="./info.js"></script>
+</body>
+</html>

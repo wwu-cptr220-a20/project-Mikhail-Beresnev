@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Mikhail Beresnev">
+    <meta name="description" content="Anonymous Chatroom Home Page">
+    <meta name="keywords" content="Anonymous, Chatroom">
+    <title>Stage 2</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./index/index.css">
+</head>
+
+<body>
+    <nav>
+        <!-- Navigation Bar-->
+        <a id="logo" href="./index/index.html" alt="logo"></a>
+        <ul>
+            <li>
+                <a id="main-page" href="./index/index.html">Anonymous Chatroom</a>
+            </li>
+            <li>
+                <a id="chatrooms" href="./chatroom/chatroom.html">Open Chatrooms</a>
+            </li>
+            <li>
+                <a id="info" href="./info/info.html">Info</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Middle of the Page -->
+        <div id="name">
+            <h2>Username</h2>
+            <input id="username-input" type="text">
+            <p>
+                Enter a temporary username for this session. This is an option feature, and a random name will be given
+                in the case of no input.
+            </p>
+        </div>
+        <!-- Horizontal layout -->
+        <!-- After pressing either button, -->
+        <div id="code">
+            <div id="issue-code">
+                <h2>Issue a Code</h2>
+                <input id="issue-code-input" type="number" placeholder="Time in Hours">
+                <button id="issue-code-button">Issue</button>
+                <p>
+                    Issue a new code for a completely new chat room. After recieving the code, send this code to the
+                    people
+                    you may wish to talk to.
+                    Additionally, enter the expiration date and time for the code in the case when at least two people
+                    have
+                    not joined the chat room (the
+                    minimum of the issuer and a different person). The default time is set to 3 days. Finally, the chat
+                    room
+                    will be deleted after 1 week of no use.
+                </p>
+            </div>
+
+            <div id="enter-code">
+                <h2>Enter a Code</h2>>
+                <input id="enter-code-input" type="text" placeholder="10101010">
+                <button id="enter-code-button">Join</button>
+                <p>
+                    Enter an exsisting code above. Upon entering the code, you will be connected to an anonymous chat
+                    room.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2020 Web Development Project by M. Beresnev</p>
+    </footer>
+    <script src="./javascript/database.js"></script>
+    <script src="./index/index.js"></script>
+</body>
+
+</html>

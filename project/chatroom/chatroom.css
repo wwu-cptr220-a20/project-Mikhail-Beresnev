@@ -1,0 +1,24 @@
+#message-history {
+    width: 50%;
+    height: 35em;
+    margin: auto;
+    margin-top: 5%;
+    background-color: lightgrey;
+}
+
+#message-input {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+#message-input textarea {
+    width: 47.3%;
+    resize: none;
+}
+
+#map {
+    height: 480px;
+    width: 670px;
+}
